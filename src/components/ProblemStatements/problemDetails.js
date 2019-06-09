@@ -3,7 +3,7 @@ import {
   door2door,
   molSchooling,
   homeBuying,
-} from '../assets/problemCategories';
+} from '../../assets/problemCategories';
 
 export const problemDetails = {
   topic1: {

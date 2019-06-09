@@ -1,7 +1,7 @@
 import { rem } from 'polished';
 import * as React from 'react';
 import styled from 'styled-components';
-import { Panel } from '../LandingPage/LandingPage';
+import { Panel } from '../SharedComponents/Panel';
 
 const Wrapper = styled.div`
   width: ${rem('600px')};

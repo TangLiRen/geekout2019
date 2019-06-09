@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import { prop } from 'styled-tools';
 import { Button, Segment } from 'semantic-ui-react';
 import { Link } from 'react-router-dom';
+import { Panel } from '../SharedComponents/Panel';
 
 const PageSegment = styled(Segment)`
   background-color: #faf8f5;
@@ -44,14 +45,6 @@ const Rect = styled.div`
   top: ${prop('top')};
   left: ${prop('left')};
   transform: rotate(${prop('angle', '30')}deg);
-`;
-
-export const Panel = styled.div`
-  padding: 1.3rem;
-  background: white;
-  border-radius: 6px;
-  border: ${rem('1px')} solid #efefef;
-  box-shadow: 0 ${rem('2px')} ${rem('20px')} 0 #efefef;
 `;
 
 const Content = styled(Panel)`
@@ -130,9 +123,9 @@ export class LandingPage extends React.Component {
           </LinkToForm>
           <Headline>Welcome to GeekOut 2019</Headline>
           <Subtitle>
-            Here's a boilerplate for a frontend website for you to use. Click
-            the button below to explore some of the problem statements for you
-            to choose. May the odds forever be in your favour.
+            Here's a simple boilerplate for a frontend website for you to use.
+            Click the button below to explore some of the problem statements for
+            you to choose. May the odds forever be in your favour.
           </Subtitle>
           <Button as={Link} size={'big'} primary to="/problem-statements">
             Let's get started!

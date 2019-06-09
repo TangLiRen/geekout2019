@@ -1,11 +1,11 @@
 import * as React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import { LandingPage } from './LandingPage/LandingPage';
-import { ProblemStatements } from './ProblemStatements/ProblemStatements';
-import { CommunityFrontDoor } from './ProblemStatements/CommunityFrontDoor';
-import { Door2Door } from './ProblemStatements/Door2Door';
-import { MOLSchooling } from './ProblemStatements/MOLSchooling';
-import { HomeBuying } from './ProblemStatements/HomeBuying';
+import { LandingPage } from './components/LandingPage/LandingPage';
+import { ProblemStatements } from './components/ProblemStatements/ProblemStatements';
+import { CommunityFrontDoor } from './components/ProblemStatements/CommunityFrontDoor';
+import { Door2Door } from './components/ProblemStatements/Door2Door';
+import { MOLSchooling } from './components/ProblemStatements/MOLSchooling';
+import { HomeBuying } from './components/ProblemStatements/HomeBuying';
 
 export const pageList = [
   {
