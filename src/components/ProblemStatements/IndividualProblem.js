@@ -2,6 +2,8 @@ import { rem } from 'polished';
 import * as React from 'react';
 import styled from 'styled-components';
 import { BackgroundInfo } from './BackgroundInfo';
+import { Button } from 'semantic-ui-react';
+import { Link } from 'react-router-dom';
 
 const Wrapper = styled.div`
   display: grid;
@@ -84,6 +86,15 @@ export class IndividualProblem extends React.Component {
           {problem.objectives.map(objective => (
             <li>{objective}</li>
           ))}
+          <Button
+            style={{ marginTop: '3em' }}
+            as={Link}
+            basic
+            color="blue"
+            to="/problem-statements"
+          >
+            Back
+          </Button>
         </EditSection>
         <TipsSection>
           <BackgroundImage src={problem.imgUrl} />

@@ -48,7 +48,9 @@ export class BackgroundInfo extends React.Component {
               <h4>Useful Links:</h4>
               {problem.links.map(link => (
                 <li>
-                  <a href={link.href}>{link.name}</a>
+                  <a href={link.href} target="_blank" rel="noopener noreferrer">
+                    {link.name}
+                  </a>
                 </li>
               ))}
             </React.Fragment>
